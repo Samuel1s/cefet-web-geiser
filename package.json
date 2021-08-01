@@ -1,0 +1,31 @@
+{
+  "name": "geiser",
+  "version": "1.0.0",
+  "description": "a simple task about the use of express.",
+  "main": "./server/app.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Samuel1s/cefet-web-geiser.git"
+  },
+  "keywords": [
+    "node",
+    "express"
+  ],
+  "author": "SamuelSantos <samuelfds286@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Samuel1s/cefet-web-geiser/issues"
+  },
+  "homepage": "https://github.com/Samuel1s/cefet-web-geiser#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "hbs": "^4.1.2"
+  },
+  "type": "module"
+}
