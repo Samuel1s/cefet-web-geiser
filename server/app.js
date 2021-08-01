@@ -11,13 +11,11 @@ let db = {}
 // carregar "banco de dados" (data/jogadores.json e data/jogosPorJogador.json)
 // você pode colocar o conteúdo dos arquivos json no objeto "db" logo abaixo
 // dica: 1-4 linhas de código (você deve usar o módulo de filesystem (fs))
-
 try {
     const jogadores = await readFile('./server/data/jogadores.json')
     const jogosPorJogador = await readFile('./server/data/jogosPorJogador.json')
     
-    db = Object.assign({}, JSON.parse(jogadores), JSON.parse(jogosPorJogador))
-        
+    db = Object.assign({}, JSON.parse(jogadores.toString("utf8")), JSON.parse(jogosPorJogador.toString("utf8")))
 } catch (err) {
     console.error(err);
 }
